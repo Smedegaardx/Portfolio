@@ -1,0 +1,34 @@
+#about{
+    padding: 20px;
+    border-top: 5px solid #FFB20F;
+}
+
+
+@media(min-width: 1000px ){
+
+ .grid-1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+ }
+
+.lottie{
+    height: 540px;
+    width: 540px;
+}
+
+}
+
+@media(max-width: 1000px ){
+
+.lottie{
+    height: 400px;
+    width: 400px;
+}
+
+.mobilecenter{
+    display: flex;
+    justify-content: center;
+}
+
+}

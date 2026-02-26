@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Hero;
+    src: url(/fonts/Bungee-Regular.ttf);
+}
+
+@font-face {
+    font-family: Standard;
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+h1{
+    font-family: Hero;
+}
+
+h2, p{
+    font-family: Standard;
+}
+
+body{
+    background-color: #F2EFE9;
+}
+
+/* custom cursor */
+
+#cursor {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%)
+}
+
+.circle_dot, .circle_outline{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    border-radius: 100%;
+    }
+
+.circle_outline {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #FFB20F;
+    z-index: 1;
+}
+
+.circle_dot {
+    width: 8px;
+    height: 8px;
+    background-color: #FFB20F;
+    z-index: 2;
+    opacity: 1;
+}

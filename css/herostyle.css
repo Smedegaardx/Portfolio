@@ -1,0 +1,86 @@
+@keyframes minimize {
+  to{
+    transform: scale(0.2);
+  }
+}
+
+.hero_section, header{
+    background-color: #171123;
+}
+
+.hero_section h1, .hero_section svg {
+    animation: minimize 2s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.hero_section h1{
+color: #FFE548;
+}
+
+header span{
+    color: #FFB20F;
+}
+
+.hero_section{
+text-align: center;
+height: 100dvh;
+}
+
+
+@media(min-width: 1000px ){
+.headtext{
+    font-size: 60px;
+   line-height: 1.6em;
+   padding-top: 10dvh;
+}
+
+.headtext1, .headtext2, .headtext3, .headtext4{
+    position: relative;
+    overflow: hidden;
+}
+
+.headtext1{
+    margin-top: 2rem;
+    text-indent: -33dvw;
+}
+.headtext2{
+    text-indent: -23dvw;
+}
+
+.headtext3{
+    margin-top: 2rem;
+    text-indent: 23dvw;
+}
+.headtext4{
+    text-indent: 33dvw;
+}
+
+.hero_section svg{
+    height: 12%;
+    width: 12%;
+    margin-top: 6rem;
+    max-height: 200px;
+}
+
+}
+
+@media(max-width: 1000px ){
+
+.headtext{
+    font-size: 30px;
+   line-height: 1.5em;
+   padding-top: 25dvh;
+}
+
+.hero_section svg path{
+    display: none;
+}
+
+   .hero_section svg{
+    height: 40%;
+    width: 40%;
+}
+}
