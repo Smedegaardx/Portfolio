@@ -6,6 +6,7 @@
 
 .hero_section, header{
     background-color: #171123;
+    border-bottom: 3px solid #FFB20F;
 }
 
 .hero_section h1, .hero_section svg {

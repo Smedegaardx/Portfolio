@@ -1,3 +1,11 @@
+body[data-cursor="orange"]{
+    --cursor-color: #FFB20F;
+}
+
+body[data-cursor="black"]{
+    --cursor-color: black;
+}
+
 @font-face {
     font-family: Hero;
     src: url(/fonts/Bungee-Regular.ttf);
@@ -27,7 +35,12 @@ h2, p{
 }
 
 body{
-    background-color: #F2EFE9;
+    background-color: #F2EFE9;   
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* custom cursor */
@@ -56,14 +69,14 @@ body{
 .circle_outline {
     width: 56px;
     height: 56px;
-    border: 1px solid #FFB20F;
+    border: 2px solid var(--cursor-color);
     z-index: 1;
 }
 
 .circle_dot {
     width: 8px;
     height: 8px;
-    background-color: #FFB20F;
+    background-color: var(--cursor-color);
     z-index: 2;
     opacity: 1;
 }
