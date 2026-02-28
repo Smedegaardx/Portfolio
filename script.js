@@ -10,7 +10,7 @@ footer.addEventListener("mouseover", () => body.dataset.cursor = "orange")
 
 scrollSVG.addEventListener("click", () => {
   window.scrollTo(0, 501);
-});
+}); 
 
 document.addEventListener("mousemove", function (e) {
   cursor.style.left = `${e.clientX}px`;
@@ -35,14 +35,43 @@ function playLottie() {
   }
 }
 
-document.querySelector(".linkedin").addEventListener("mouseenter", () => footer.dataset.color = "linked_in")
-document.querySelector(".linkedin").addEventListener("mouseleave", () => footer.dataset.color = "main")
-document.querySelector(".linkedin").addEventListener("mouseenter", () => body.dataset.cursor = "black")
+const outline = document.querySelector(".circle_outline")
+const dot = document.querySelector(".circle_dot")
 
-document.querySelector(".github").addEventListener("mouseenter", () => footer.dataset.color = "github")
-document.querySelector(".github").addEventListener("mouseleave", () => footer.dataset.color = "main")
-document.querySelector(".github").addEventListener("mouseenter", () => body.dataset.cursor = "black")
+document.querySelector(".linkedin").addEventListener("mouseenter", () => {footer.dataset.color = "linked_in";
+  hoverMouse();
+  outline.classList.add("hover_li");
+})
+document.querySelector(".linkedin").addEventListener("mouseleave", () => {footer.dataset.color = "main";
+ unHoverMouse();
+outline.classList.remove("hover_li");})
 
-document.querySelector(".cv").addEventListener("mouseenter", () => footer.dataset.color = "cv")
-document.querySelector(".cv").addEventListener("mouseleave", () => footer.dataset.color = "main")
-document.querySelector(".cv").addEventListener("mouseenter", () => body.dataset.cursor = "black")
+
+document.querySelector(".github").addEventListener("mouseenter", () => {footer.dataset.color = "github";
+  hoverMouse();
+  outline.classList.add("hover_git");
+})
+document.querySelector(".github").addEventListener("mouseleave", () => {footer.dataset.color = "main"
+unHoverMouse();
+outline.classList.remove("hover_git");})
+
+
+document.querySelector(".cv").addEventListener("mouseenter", () => {footer.dataset.color = "cv";
+  hoverMouse();
+  outline.classList.add("hover_cv");
+})
+document.querySelector(".cv").addEventListener("mouseleave", () => {footer.dataset.color = "main"
+unHoverMouse();
+outline.classList.remove("hover_cv");})
+
+
+function hoverMouse(){
+body.dataset.cursor = "black";
+ outline.classList.add("cursor_hover");
+ dot.classList.add("cursor_hover");
+}
+
+function unHoverMouse(){
+ outline.classList.remove("cursor_hover");
+ dot.classList.remove("cursor_hover");
+}

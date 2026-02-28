@@ -70,13 +70,35 @@ main{
     width: 56px;
     height: 56px;
     border: 2px solid var(--cursor-color);
-    z-index: 1;
+    z-index: 2;
+    transition: border-radius 200ms ease-out;
 }
 
 .circle_dot {
     width: 8px;
     height: 8px;
     background-color: var(--cursor-color);
-    z-index: 2;
+    z-index: 1;
     opacity: 1;
+}
+
+.cursor_hover{
+    border-radius: 10%;
+    transition: border-radius 200ms ease-out;
+    background-color: black;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hover_li{
+background-image: url(/src/InBug-White.png);
+}
+
+.hover_cv{
+background-image: url(/src/curriculum-vitae-svgrepo-com.svg);
+}
+
+.hover_git{
+background-image: url(/src/github.svg);
 }
