@@ -1,33 +1,30 @@
-#about{
-    padding: 20px;
+#about {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-@media(min-width: 1000px ){
-
- .grid-1_1{
+@media (min-width: 1000px) {
+  .grid-1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
- }
+  }
 
-.lottie{
+  .lottie {
     height: 540px;
     width: 540px;
+  }
 }
 
-}
-
-@media(max-width: 1000px ){
-
-.lottie{
+@media (max-width: 1000px) {
+  .lottie {
     height: 400px;
     width: 400px;
-}
+  }
 
-.mobilecenter{
+  .mobilecenter {
     display: flex;
     justify-content: center;
-}
-
+  }
 }
