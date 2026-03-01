@@ -4,6 +4,42 @@
   margin: 0 auto;
 }
 
+.project img {
+  width: 120px;
+  height: auto;
+  position: relative;
+  border-radius: 5%;
+}
+
+.project {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 20px;
+  border-top: 3px solid #ffb20f;
+  height: 120px;
+}
+
+.project h1 {
+  margin: auto 0 auto 50px;
+  font-size: 80px;
+  color: #ffb20f;
+  text-shadow:
+    2px 0 0 #000,
+    0 -1px 0 #000,
+    0 1px 0 #000,
+    -2px 0 0 #000;
+}
+
+.project:hover img {
+  width: 300px;
+  height: auto;
+  bottom: 50px;
+  transform: rotate(-20deg);
+  transition-property: transform, width;
+  transition-duration: 200ms;
+}
+
 @media (min-width: 1000px) {
   .grid-1_1 {
     display: grid;
@@ -14,6 +50,9 @@
   .lottie {
     height: 540px;
     width: 540px;
+  }
+  .project {
+    height: 120px;
   }
 }
 
@@ -26,5 +65,9 @@
   .mobilecenter {
     display: flex;
     justify-content: center;
+  }
+
+  .project img {
+    display: none;
   }
 }

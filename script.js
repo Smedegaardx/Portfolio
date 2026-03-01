@@ -13,7 +13,7 @@ const main = document
 footer.addEventListener("mouseover", () => (body.dataset.cursor = "orange"));
 
 scrollSVG.addEventListener("click", () => {
-  window.scrollTo(0, 501);
+  window.scrollTo(0, 900);
 });
 
 document.addEventListener("mousemove", function (e) {
