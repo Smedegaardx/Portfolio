@@ -1,7 +1,11 @@
 #about {
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto 100px;
+}
+
+#projects {
+  border-bottom: 3px solid #ffb20f;
 }
 
 .project img {
@@ -9,6 +13,12 @@
   height: auto;
   position: relative;
   border-radius: 5%;
+  transition-property: transform, width;
+  transition-duration: 200ms;
+}
+
+.project a {
+  margin: auto 0;
 }
 
 .project {
@@ -31,13 +41,18 @@
     -2px 0 0 #000;
 }
 
+.project a {
+  text-decoration: none;
+}
+
 .project:hover img {
-  width: 300px;
+  width: 400px;
   height: auto;
   bottom: 50px;
-  transform: rotate(-20deg);
+  transform: rotate(-17deg);
   transition-property: transform, width;
   transition-duration: 200ms;
+  z-index: 100;
 }
 
 @media (min-width: 1000px) {
@@ -69,5 +84,9 @@
 
   .project img {
     display: none;
+  }
+
+  .project h1 {
+    font-size: 40px;
   }
 }
