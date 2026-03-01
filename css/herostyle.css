@@ -1,6 +1,6 @@
 @keyframes minimize {
   to {
-    transform: scale(0.2);
+    transform: scale(0.1);
   }
 }
 
@@ -12,7 +12,7 @@ header {
 
 .hero_section h1,
 .hero_section svg {
-  animation: minimize 2s linear infinite;
+  animation: minimize 0.4s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
   animation-iteration-count: 1;
