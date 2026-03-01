@@ -42,6 +42,17 @@ function playLottie() {
   }
 }
 
+window.addEventListener("scroll", playProgress);
+
+function playProgress() {
+  let scroll = this.scrollY;
+  if (scroll > 2200) {
+    document.querySelectorAll(".progressFill").forEach((li) => {
+      li.style.animationPlayState = "running";
+    });
+  }
+}
+
 const outline = document.querySelector(".circle_outline");
 const dot = document.querySelector(".circle_dot");
 

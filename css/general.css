@@ -32,7 +32,8 @@ a {
 }
 
 h2,
-p {
+p,
+h3 {
   font-family: Standard;
 }
 

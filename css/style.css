@@ -1,7 +1,12 @@
-#about {
+#about,
+#skills {
   padding: 20px;
   max-width: 1200px;
-  margin: 40px auto 100px;
+  margin: 100px auto 100px;
+}
+
+.aboutsection {
+  margin-top: 2em;
 }
 
 #projects {
@@ -55,6 +60,44 @@
   z-index: 100;
 }
 
+.prj1:hover {
+  background-color: #bacdb0;
+}
+.prj2:hover {
+  background-color: #d40e14;
+}
+.prj3:hover {
+  background-color: #f35655;
+}
+.prj4:hover {
+  background-color: #8a8f6a;
+}
+.prj5:hover {
+  background-color: #808080;
+}
+
+/* Progressbars */
+.progress {
+  height: 40px;
+  background: #171123;
+  border-radius: 10px;
+}
+
+.progresslength {
+  padding: 0 2rem 0 2rem;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background-color: #ffe548;
+  border-radius: 9px;
+}
+
+.baroverskrift {
+  margin: 1rem 0 0.5rem 2rem;
+}
+
 @media (min-width: 1000px) {
   .grid-1_1 {
     display: grid;
@@ -88,5 +131,133 @@
 
   .project h1 {
     font-size: 40px;
+  }
+}
+
+.html {
+  width: 80%;
+  animation: fillhtml 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillhtml {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.java {
+  width: 50%;
+  animation: filljava 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes filljava {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.css {
+  width: 75%;
+  animation: fillcss 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillcss {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+.learning {
+  width: 100%;
+  animation: filllearning 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes filllearning {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.illustrator {
+  width: 45%;
+  animation: fillillustrator 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillillustrator {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+.ae {
+  width: 60%;
+  animation: fillae 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillae {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.ps {
+  width: 35%;
+  animation: fillps 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillps {
+  from {
+    width: 0;
+  }
+  to {
+    width: 35%;
+  }
+}
+
+.figma {
+  width: 75%;
+  animation: fillfigma 2s ease;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fillfigma {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
   }
 }
