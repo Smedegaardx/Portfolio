@@ -37,13 +37,14 @@
 
 .project h1 {
   margin: auto 0 auto 50px;
-  font-size: 80px;
+  font-size: 62px;
   color: #ffb20f;
   text-shadow:
     2px 0 0 #000,
     0 -1px 0 #000,
     0 1px 0 #000,
     -2px 0 0 #000;
+  text-wrap: nowrap;
 }
 
 .project a {
@@ -58,6 +59,10 @@
   transition-property: transform, width;
   transition-duration: 200ms;
   z-index: 100;
+}
+
+.prj0:hover {
+  background-color: #ffcc4a;
 }
 
 .prj1:hover {
