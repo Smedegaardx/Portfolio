@@ -44,7 +44,6 @@
     0 -1px 0 #000,
     0 1px 0 #000,
     -2px 0 0 #000;
-  text-wrap: nowrap;
 }
 
 .project a {
@@ -137,6 +136,7 @@
 
   .project h1 {
     font-size: 40px;
+    margin-left: 10px;
   }
 }
 
