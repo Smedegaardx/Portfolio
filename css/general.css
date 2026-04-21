@@ -101,3 +101,12 @@ body {
 .hover_git {
   background-image: url(/src/github.svg);
 }
+
+@media screen and (max-width: 768px) {
+  #cursor {
+    display: none;
+  }
+  * {
+    cursor: inherit;
+  }
+}
